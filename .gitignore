@@ -1,0 +1,10 @@
+# Unity3D
+/Library
+/Temp
+/obj
+
+# Visual Studio
+/.vs
+/_ReSharper.Caches
+*.csproj
+*.sln
