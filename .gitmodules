@@ -1,0 +1,3 @@
+[submodule "Assets/Editor/Unity-Animation-Hierarchy-Editor"]
+	path = Assets/Editor/Unity-Animation-Hierarchy-Editor
+	url = https://github.com/s-m-k/Unity-Animation-Hierarchy-Editor.git
