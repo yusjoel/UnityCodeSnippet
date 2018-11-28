@@ -9,8 +9,8 @@ using UnityEngine;
 // RaymondEllis:
 // > Apparently this is an issue with meshes without UV being set as lightmap static.
 // > Simple fix: for every static object in your scene, uncheck "Lightmap Static".
-// ThePilgrim: 
-// > I had this same error. I had a static mesh without UVs in my scene. To fix it, I went to the import settings on that mesh and checked "Generate Lightmap UVs". 
+// ThePilgrim:
+// > I had this same error. I had a static mesh without UVs in my scene. To fix it, I went to the import settings on that mesh and checked "Generate Lightmap UVs".
 
 public class LightmapUvChecker : EditorWindow
 {
@@ -30,10 +30,10 @@ public class LightmapUvChecker : EditorWindow
     private void AddMeshFilter(MeshFilter meshFilter)
     {
         var mesh = meshFilter.sharedMesh;
-        string guid;
-        int localId;
-        string assetPath = "(N/A)";
-        if (AssetDatabase.TryGetGUIDAndLocalFileIdentifier(mesh, out guid, out localId)) assetPath = AssetDatabase.GUIDToAssetPath(guid);
+
+        string assetPath = AssetDatabase.GetAssetPath(mesh);
+        if(string.IsNullOrEmpty(assetPath))
+            assetPath = "(N/A)";
 
         if (!modelPathMeshesMap.ContainsKey(assetPath))
         {
@@ -106,7 +106,9 @@ public class LightmapUvChecker : EditorWindow
             var meshFilters = pair.Value;
             if (GUILayout.Button("Remove Lightmap Static")) RemoveLightmapStatic(meshFilters);
 
+            GUI.enabled = model != null;
             if (GUILayout.Button("Generate Lightmap UVs")) GenerateLightmapUvs(assetPath);
+            GUI.enabled = true;
 
             GUILayout.EndHorizontal();
 
