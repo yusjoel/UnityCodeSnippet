@@ -23,8 +23,17 @@
 
 * [Question on Unity Answers](https://answers.unity.com/questions/1470570/getting-some-error-always-when-i-open-unity.html)
 
-### AnimationHierarchyEditor.cs
+### Animation工具
 
-当文件的结构变化后, 使用这个工具来修正Animation, 功能还不够强大, 仅仅是够用.
+#### AnimationHierarchyEditor.cs
 
-* [Howto: Remapping the Animation Hierarchy in Unity] (http://enemyhideout.com/2016/05/howto-remapping-the-animation-hierarchy-in-unity/)
+用来修正Animation中断掉的物件结构, 但同时只能修正1个Animation, 不能应用到Animator下的所有Animation. 功能不如下面这个工具, 但也不是没有用, 可以用于结构已经改变, 要进行修复的情况.
+
+* [Howto: Remapping the Animation Hierarchy in Unity](http://enemyhideout.com/2016/05/howto-remapping-the-animation-hierarchy-in-unity/)
+
+#### Monitor4AnimationCurve
+
+这个工具可以实时监控物件的移动/重命名等操作, 并且立即修正Animation/Animator, 缺点是不能同时修正多个Animation/Animator.
+
+* [Gibhub](https://github.com/gydisme/Unity-Game-Framwork/tree/master/Assets/Editor/CustomEditor/Monitor4AnimationCurve)
+* [Question on Unity Answers](https://answers.unity.com/questions/662382/how-to-change-objects-hierarchy-level-in-animation.html)
