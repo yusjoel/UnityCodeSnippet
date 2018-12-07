@@ -35,5 +35,5 @@
 
 这个工具可以实时监控物件的移动/重命名等操作, 并且立即修正Animation/Animator, 缺点是不能同时修正多个Animation/Animator.
 
-* [Gibhub](https://github.com/gydisme/Unity-Game-Framwork/tree/master/Assets/Editor/CustomEditor/Monitor4AnimationCurve)
+* [Github](https://github.com/gydisme/Unity-Game-Framwork/tree/master/Assets/Editor/CustomEditor/Monitor4AnimationCurve)
 * [Question on Unity Answers](https://answers.unity.com/questions/662382/how-to-change-objects-hierarchy-level-in-animation.html)
