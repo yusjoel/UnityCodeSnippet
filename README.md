@@ -23,6 +23,12 @@
 
 * [Question on Unity Answers](https://answers.unity.com/questions/1470570/getting-some-error-always-when-i-open-unity.html)
 
+### CleanUpMaterials.cs
+
+材质在修改了着色器之后还是会保留原来的属性, 所以也会保留对原纹理的引用, 这个脚本用于清理这些不用的数学.
+
+* [Thread on Unity Forum](https://forum.unity.com/threads/material-asset-keeps-references-to-assets-that-are-not-used.523192/)
+
 ### Animation工具
 
 #### AnimationHierarchyEditor.cs
