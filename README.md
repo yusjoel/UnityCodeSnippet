@@ -13,6 +13,7 @@
 ### ProjectSettingsInspector.cs
 
 在Edit - Project Settings的子菜单中增加一项Everything, 点击后创建一个锁定的新窗口, 可以编辑所有的工程设置.
+NOTE: 在Unity 2018.3及以上版本已经不需要了
 
 * [Thread on Unity Forum](https://forum.unity.com/threads/new-settings-gui.557308/)
 * [Snippet on Bitbucket](https://bitbucket.org/snippets/pschraut/5edXM8/unity-all-project-settings-in-a-single)

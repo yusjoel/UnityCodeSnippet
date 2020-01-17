@@ -1,4 +1,4 @@
-﻿#if UNITY_EDITOR
+﻿#if UNITY_EDITOR && !UNITY_2018_3_OR_NEWER
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
