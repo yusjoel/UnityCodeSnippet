@@ -1,6 +1,5 @@
-﻿using Gempoll.Plugins.Extensions;
+﻿using Extensions;
 using NUnit.Framework;
-using System;
 using System.Collections.Generic;
 
 namespace Tests
@@ -51,15 +50,11 @@ namespace Tests
             var notFoundStruct = nameObjectMap.SafelyGet<int>("Not found");
             Assert.AreEqual(0, notFoundStruct);
 
-            Assert.Catch<InvalidCastException>(() =>
-            {
-                nameObjectMap.SafelyGet<int>("Text");
-            });
+            var invalidCast1 = nameObjectMap.SafelyGet<int>("Text");
+            Assert.AreEqual(0, invalidCast1);
 
-            Assert.Catch<InvalidCastException>(() =>
-            {
-                nameObjectMap.SafelyGet<string>("Number");
-            });
+            var invalidCast2 = nameObjectMap.SafelyGet<string>("Number");
+            Assert.AreEqual(null, invalidCast2);
 
             var number1 = nameIntMap.SafelyGet("one");
             Assert.AreEqual(1, number1);

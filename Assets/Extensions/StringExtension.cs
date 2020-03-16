@@ -1,6 +1,6 @@
 using System.Text.RegularExpressions;
 
-namespace Gempoll.Plugins.Extensions
+namespace Extensions
 {
     public static class StringExtension
     {
@@ -86,7 +86,7 @@ namespace Gempoll.Plugins.Extensions
         }
 
         /// <summary>
-        ///     去掉字符串中的数字  
+        ///     去掉字符串中的数字
         /// </summary>
         /// <param name="key"></param>
         /// <returns></returns>

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Gempoll.Plugins.Extensions
+namespace Extensions
 {
     // http://orbcreation.com/orbcreation/page.orb?1099
 

@@ -1,6 +1,6 @@
 ﻿using System.IO;
 
-namespace Gempoll.Plugins.Extensions
+namespace Extensions
 {
     public static class DirectoryInfoExtension
     {

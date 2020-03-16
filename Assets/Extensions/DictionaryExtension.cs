@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Gempoll.Plugins.Extensions
+namespace Extensions
 {
     public static class DictionaryExtension
     {
@@ -15,7 +15,8 @@ namespace Gempoll.Plugins.Extensions
         {
             if (dictionary == null) return default(T);
             if (!dictionary.ContainsKey(key)) return default(T);
-            return (T) dictionary[key];
+            var value = dictionary[key];
+            return value is T ? (T)dictionary[key] : default(T);
         }
     }
 }

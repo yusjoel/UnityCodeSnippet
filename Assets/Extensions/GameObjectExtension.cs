@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-namespace Gempoll.Plugins.Extensions
+namespace Extensions
 {
     public static class GameObjectExtension
     {

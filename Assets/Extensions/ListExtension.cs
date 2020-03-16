@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Gempoll.Plugins.Extensions
+namespace Extensions
 {
     public static class ListExtension
     {

@@ -1,4 +1,4 @@
-﻿namespace Gempoll.Plugins.Extensions
+﻿namespace Extensions
 {
     public static class ArrayExtension
     {

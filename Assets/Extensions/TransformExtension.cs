@@ -1,6 +1,7 @@
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace Gempoll.Plugins.Extensions {
+namespace Extensions
+{
     public static class TransformExtension
     {
         public static void SetPositionX(this Transform t, float newX)
@@ -37,7 +38,7 @@ namespace Gempoll.Plugins.Extensions {
         {
             t.eulerAngles = new Vector3(newX, t.eulerAngles.y, t.eulerAngles.z);
         }
-        
+
         public static void SetEulerAnglesY(this Transform t, float newY)
         {
             t.eulerAngles = new Vector3(t.eulerAngles.x, newY, t.eulerAngles.z);

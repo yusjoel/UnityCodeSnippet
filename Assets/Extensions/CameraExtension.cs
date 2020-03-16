@@ -1,6 +1,6 @@
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace Gempoll.Plugins.Extensions
+namespace Extensions
 {
     public static class CameraExtension
     {
