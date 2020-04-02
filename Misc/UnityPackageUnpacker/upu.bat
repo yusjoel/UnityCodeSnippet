@@ -1,0 +1,1 @@
+UnityPackageUnpacker.exe %1 "%~dp1"
