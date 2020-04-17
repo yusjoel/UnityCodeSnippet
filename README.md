@@ -26,9 +26,25 @@ NOTE: 在Unity 2018.3及以上版本已经不需要了
 
 ### CleanUpMaterials.cs
 
-材质在修改了着色器之后还是会保留原来的属性, 所以也会保留对原纹理的引用, 这个脚本用于清理这些不用的数学.
+材质在修改了着色器之后还是会保留原来的属性, 所以也会保留对原纹理的引用, 这个脚本用于清理这些不用的属性.
 
 * [Thread on Unity Forum](https://forum.unity.com/threads/material-asset-keeps-references-to-assets-that-are-not-used.523192/)
+
+### 模型工具
+
+#### ArcenSubmeshSplitter + MeshExtension
+
+用于将一个模型的子网格拆分出来. 适用范围不是很广, 我遇到的情况是一个模型的Submesh达到1000以上, 在监视面板会造成卡顿, 所以才使用这个工具进行拆分.
+
+* [Question on Unity Answers](https://answers.unity.com/questions/662382/how-to-change-objects-hierarchy-level-in-animation.html)
+
+#### ModelStatisticsEditor
+
+用于统计一个物件下各个层级所包含的模型统计信息, 统计内容包括三角形数, 顶点数和网格数. 可以在Hierarchy和Project视图使用, 用于定位面数或者网格数的热点.
+
+#### SceneMeshStatisticEditor
+
+用于统计当前场景中的物件总数, 三角形数, 顶点数和网格数, 并且定位三角形数最高的物件
 
 ### Animation工具
 
