@@ -31,7 +31,8 @@ public class ResolutionAndPresentation
         // Disabled, 永不显示
         // Enabled, 默认显示, 可以在对话框中关闭, 按Alt或者Shift运行则显示
         // HiddenByDefault, 默认不显示, 按Alt或者Shift运行则显示, 也可以在运行时加入参数-show-screen-selector
-        PlayerSettings.displayResolutionDialog = ResolutionDialogSetting.HiddenByDefault;
+        // 2019不再支持分辨率对话框
+        //PlayerSettings.displayResolutionDialog = ResolutionDialogSetting.HiddenByDefault;
 
         // 记录日志, 可以加入参数-logfile指定日志存放路径, 否则存放在C:\Users\UserName\AppData\LocalLow\CompanyName\AppName
         PlayerSettings.usePlayerLog = true;

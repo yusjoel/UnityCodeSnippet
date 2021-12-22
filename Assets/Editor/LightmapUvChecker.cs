@@ -60,7 +60,7 @@ public class LightmapUvChecker : EditorWindow
                 continue;
 
             var flags = GameObjectUtility.GetStaticEditorFlags(meshFilter.gameObject);
-            bool isLightmapStatic = (flags & StaticEditorFlags.LightmapStatic) != 0;
+            bool isLightmapStatic = (flags & StaticEditorFlags.ContributeGI) != 0;
             if (isLightmapStatic && IsNullOrEmpty(mesh.uv) && IsNullOrEmpty(mesh.uv2))
                 AddMeshFilter(meshFilter);
         }
@@ -168,7 +168,7 @@ public class LightmapUvChecker : EditorWindow
         {
             var go = meshFilter.gameObject;
             var flags = GameObjectUtility.GetStaticEditorFlags(go);
-            var newFlags = flags & ~StaticEditorFlags.LightmapStatic;
+            var newFlags = flags & ~StaticEditorFlags.ContributeGI;
             //Debug.LogFormat(go, "Old Flags:{0}\nNew Flags: {1}", flags, newFlags);
             GameObjectUtility.SetStaticEditorFlags(go, newFlags);
             EditorSceneManager.MarkSceneDirty(go.scene);
